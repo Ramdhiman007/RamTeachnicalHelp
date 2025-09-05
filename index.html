@@ -22,6 +22,7 @@
     }
     header h1 {
       margin: 0;
+      font-size: 1.8rem;
     }
     nav {
       background: #444;
@@ -33,6 +34,7 @@
       text-decoration: none;
       margin: 0 15px;
       font-weight: bold;
+      font-size: 1rem;
     }
     nav a:hover {
       text-decoration: underline;
@@ -46,15 +48,18 @@
     }
     h2 {
       color: #222;
+      font-size: 1.5rem;
     }
     .gallery {
       display: flex;
       gap: 15px;
       flex-wrap: wrap;
+      justify-content: center;
     }
     .gallery img {
       width: 300px;
       border-radius: 6px;
+      max-width: 100%;
     }
     /* Accordion Styles */
     .problem {
@@ -99,6 +104,7 @@
       display: flex;
       align-items: center;
       gap: 8px;
+      font-size: 0.95rem;
     }
     .steps li i {
       font-size: 18px;
@@ -114,6 +120,33 @@
       text-align: center;
       padding: 15px;
       margin-top: 20px;
+      font-size: 0.9rem;
+    }
+
+    /* ✅ Responsive Design */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.4rem;
+      }
+      nav a {
+        display: block;
+        margin: 10px 0;
+        font-size: 0.95rem;
+      }
+      section {
+        margin: 10px;
+        padding: 15px;
+      }
+      h2 {
+        font-size: 1.2rem;
+      }
+      .gallery img {
+        width: 100%;
+      }
+      iframe {
+        width: 100%;
+        height: 220px;
+      }
     }
   </style>
 </head>
@@ -140,12 +173,12 @@
       <div class="problem-content">
         <p><strong>Solution:</strong></p>
         <ul class="steps">
-          <li><i class="fa-solid fa-rotate-right"></i> Step 1: Restart your PC in Safe Mode</li>
-          <li><i class="fa-solid fa-microchip"></i> Step 2: Update drivers</li>
-          <li><i class="fa-solid fa-shield-virus"></i> Step 3: Run a virus scan</li>
-          <li><i class="fa-solid fa-download"></i> Step 4: If problem persists, reinstall Windows</li>
+          <li><i class="fa-solid fa-rotate-right"></i> Restart your PC in Safe Mode</li>
+          <li><i class="fa-solid fa-microchip"></i> Update drivers</li>
+          <li><i class="fa-solid fa-shield-virus"></i> Run a virus scan</li>
+          <li><i class="fa-solid fa-download"></i> Reinstall Windows if problem persists</li>
         </ul>
-        <img src="https://placehold.co/400x250?text=Windows+Error" alt="Windows Error">
+        <img src="https://placehold.co/400x250?text=Windows+Error" alt="Windows Error" style="max-width:100%;">
       </div>
     </div>
 
@@ -154,24 +187,24 @@
       <div class="problem-content">
         <p><strong>Solution:</strong></p>
         <ul class="steps">
-          <li><i class="fa-solid fa-fan"></i> Step 1: Clean the cooling fan</li>
-          <li><i class="fa-solid fa-laptop"></i> Step 2: Use a cooling pad</li>
-          <li><i class="fa-solid fa-bed"></i> Step 3: Avoid placing the laptop on soft surfaces</li>
+          <li><i class="fa-solid fa-fan"></i> Clean the cooling fan</li>
+          <li><i class="fa-solid fa-laptop"></i> Use a cooling pad</li>
+          <li><i class="fa-solid fa-bed"></i> Avoid soft surfaces</li>
         </ul>
-        <img src="https://placehold.co/400x250?text=Heating+Issue" alt="Laptop Heating">
+        <img src="https://placehold.co/400x250?text=Heating+Issue" alt="Laptop Heating" style="max-width:100%;">
       </div>
     </div>
-
+	
     <div class="problem">
       <h3>Problem: Slow Computer Performance <i class="fa-solid fa-chevron-down"></i></h3>
       <div class="problem-content">
         <p><strong>Solution:</strong></p>
         <ul class="steps">
-          <li><i class="fa-solid fa-play"></i> Step 1: Remove unnecessary startup programs</li>
-          <li><i class="fa-solid fa-broom"></i> Step 2: Clear junk files</li>
-          <li><i class="fa-solid fa-memory"></i> Step 3: Upgrade RAM if required</li>
+          <li><i class="fa-solid fa-play"></i> Remove unnecessary startup programs</li>
+          <li><i class="fa-solid fa-broom"></i> Clear junk files</li>
+          <li><i class="fa-solid fa-memory"></i> Upgrade RAM if required</li>
         </ul>
-        <img src="https://placehold.co/400x250?text=Slow+Performance" alt="Slow PC">
+        <img src="https://placehold.co/400x250?text=Slow+Performance" alt="Slow PC" style="max-width:100%;">
       </div>
     </div>
 
@@ -180,12 +213,12 @@
       <div class="problem-content">
         <p><strong>Solution:</strong></p>
         <ul class="steps">
-          <li><i class="fa-solid fa-wifi"></i> Step 1: Check Wi-Fi / LAN connection</li>
-          <li><i class="fa-solid fa-plug"></i> Step 2: Restart modem & router</li>
-          <li><i class="fa-solid fa-network-wired"></i> Step 3: Run Network Troubleshooter</li>
-          <li><i class="fa-solid fa-gear"></i> Step 4: Reset network settings if issue persists</li>
+          <li><i class="fa-solid fa-wifi"></i> Check Wi-Fi / LAN connection</li>
+          <li><i class="fa-solid fa-plug"></i> Restart modem & router</li>
+          <li><i class="fa-solid fa-network-wired"></i> Run Network Troubleshooter</li>
+          <li><i class="fa-solid fa-gear"></i> Reset network settings if issue persists</li>
         </ul>
-        <img src="https://placehold.co/400x250?text=Internet+Issue" alt="Internet Issue">
+        <img src="https://placehold.co/400x250?text=Internet+Issue" alt="Internet Issue" style="max-width:100%;">
       </div>
     </div>
 
@@ -194,12 +227,12 @@
       <div class="problem-content">
         <p><strong>Solution:</strong></p>
         <ul class="steps">
-          <li><i class="fa-solid fa-print"></i> Step 1: Check printer cables & power</li>
-          <li><i class="fa-solid fa-file-lines"></i> Step 2: Ensure paper & ink/toner are available</li>
-          <li><i class="fa-solid fa-desktop"></i> Step 3: Reinstall printer drivers</li>
-          <li><i class="fa-solid fa-screwdriver-wrench"></i> Step 4: Run printer troubleshooter</li>
+          <li><i class="fa-solid fa-print"></i> Check printer cables & power</li>
+          <li><i class="fa-solid fa-file-lines"></i> Ensure paper & ink/toner are available</li>
+          <li><i class="fa-solid fa-desktop"></i> Reinstall printer drivers</li>
+          <li><i class="fa-solid fa-screwdriver-wrench"></i> Run printer troubleshooter</li>
         </ul>
-        <img src="https://placehold.co/400x250?text=Printer+Issue" alt="Printer Issue">
+        <img src="https://placehold.co/400x250?text=Printer+Issue" alt="Printer Issue" style="max-width:100%;">
       </div>
     </div>
 
@@ -219,16 +252,15 @@
   <!-- Videos Section -->
   <section id="videos">
     <h2>Helpful Videos</h2>
-    <p>Watch our step-by-step video tutorials:</p>
+    <p>Watch our step-by-step tutorials:</p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/W0IN4Evxr2I" frameborder="0" allowfullscreen></iframe>
   </section>
 
   <!-- Contact Section -->
   <section id="contact">
     <h2>Contact Us</h2>
-    <p>If you face any computer or laptop issues, contact us:</p>
     <p>Email: ramtechnicalhelp@example.com</p>
-    <p>Phone: +91 987654</p>
+    <p>Phone: +91 9876543210</p>
   </section>
 
   <footer>
@@ -241,7 +273,17 @@
     problems.forEach(problem => {
       problem.addEventListener("click", () => {
         const content = problem.nextElementSibling;
-        content.style.display = content.style.display === "block" ? "none" : "block";
+        const icon = problem.querySelector("i");
+
+        if (content.style.display === "block") {
+          content.style.display = "none";
+          icon.classList.remove("fa-chevron-up");
+          icon.classList.add("fa-chevron-down");
+        } else {
+          content.style.display = "block";
+          icon.classList.remove("fa-chevron-down");
+          icon.classList.add("fa-chevron-up");
+        }
       });
     });
   </script>
